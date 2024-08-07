@@ -2,12 +2,8 @@
 Este código projeta um site de compra com o banco de dados, onde você irá adicionar um produto, marca e a categoria deste item, onde será colocado ao banco de dados.
 Criamos um banco de dados com o nome Compra onde tudo que será feito irá ficar nele.  
 ![image info](_img/banco_de_dados.png)  
-<<<<<<< HEAD
 A baixo está o código funcionando, depois de cadastrar em cada uma das funções.
 ![image info](_img/fun%C3%A7%C3%A3o_c%C3%B3digo.gif)
-=======
-
->>>>>>> 67419afa4f50703b3981179106e175575cecff7b
 
 # ⚙️Função
 🔸Iniciamo o código com um arquivo de ``conexão`` que está dentro da pasta controller, onde conecta ``PHP`` com ``Banco de dados.``  
@@ -36,10 +32,6 @@ Caso houver um erro de conexão, a função ``die`` é chamada, exibindo a mensa
         die ('Connect Error');
     }  
 
-<<<<<<< HEAD
-🔹
-
-=======
 🔹Agora dentro do arquivo ``categoria.php`` utilizamos o código a baixo, ele tem a função de incluir o conteúdo do arquivo conexao.php dentro do script atual. Ao usarmos o include_once, iremos garantir que o código de conexão seja incluído apenas uma vez, evitando a execução repetida e possíveis erros associados a múltiplas inclusões.  
 Também dentro do arquivo ``categoria.php`` utilizamos um Input onde o usuário irá colocar a descrição do produto.
 
@@ -149,7 +141,6 @@ Os códigos PHP são ambos iguais, a diferença é que pra Pra Categoria é usad
 |Aqui ele cria uma string contendo a consulta SQL para inserir um novo registro na tabela produtos. Os valores a serem inseridos são os armazenados nas variáveis PHP. A consulta inclui os campos IDCATEGORIA, IDMARCA, NOME, DESCRICAO, ESTOQUE e PRECO.
 
     $grava_produto = "INSERT INTO produtos(`IDCATEGORIA`, `IDMARCA`, `NOME`, `DESCRICAO`, `ESTOQUE`, `PRECO`) VALUES ('$categoria','$marca','$nome_produto','$descricao','$estoque','$preco')";
->>>>>>> 67419afa4f50703b3981179106e175575cecff7b
 
 # 🧐Fontes Consultadas
 🔴[PHP](https://www.php.net/manual/pt_BR/book.mysqli.php)  
