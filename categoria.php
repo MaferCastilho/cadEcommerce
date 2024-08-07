@@ -1,3 +1,4 @@
+<!-- conecta com o banco de dados -->
 <?php
 include_once('controller/conexao.php');
 ?>
@@ -15,6 +16,7 @@ include_once('controller/conexao.php');
             <a href="index.php" target="_self">Voltar</a>
         </div>
     </header>
+    <!-- Insere um input para o usuário colocar a descrição do produto -->
     <section id="produtos">
         <form action="insere-categoria.php" method="post">
             <label for="">Descrição:</label>
